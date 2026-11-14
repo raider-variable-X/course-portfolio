@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100vh;
+    margin: 0;
+}
+
+body {
+    background-color: #28301c;
+    color: #d2cf9a;
+    font-family: 'Space Grotesk', sans-serif;
+    line-height: 2;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 32px 0;
+}
+
+main {
+    max-width: 1200px;
+    width: 90%;
+    padding: 16px;
+    border: 2px solid #9a7e3b;
+}
+
+h1 {
+    font-family: 'Righteous', sans-serif;
+    color: #d2cf9a;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 1.1em;
+    margin-top: 48px;
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+main>p {
+    margin-bottom: 32px;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.collection-grid {
+    margin: 48px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.collection-card {
+    border: 2px solid #9a7e3b;
+    background-color: #323d25;
+    padding: 16px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 300px;
+}
+
+.collection-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    padding: 12px;
+    background-color: #28301c;
+    display: block;
+    border: 1px solid #9a7e3b;
+    margin-bottom: 16px;
+}
+
+.collection-card h2 {
+    font-family: 'Righteous', sans-serif;
+    color: #9a7e3b;
+    font-size: 24px;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 8px;
+    line-height: 1.2;
+}
+
+.collection-card .details {
+    font-size: 14px;
+    color: #d2cf9a;
+    margin-bottom: 16px;
+    font-style: italic;
+}
+
+.collection-card .description {
+    font-size: 16px;
+    margin-bottom: 0;
+    line-height: 1.6;
+}
+
+@media (width >= 480px) {
+    .collection-card {
+        flex-basis: 45%;
+    }
+}
+
+@media (width >= 1024px) {
+    .collection-card {
+        flex-basis: 30%;
+    }
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px solid #9a7e3b;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+footer a {
+    color: #9a7e3b;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
