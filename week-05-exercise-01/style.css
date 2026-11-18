@@ -1,0 +1,186 @@
+:root {
+    --bg-main: #28301c;
+    --bg-card: #323d25;
+    --accent-gold: #9a7e3b;
+    --accent-gold-bright: #b8984a;
+    --text-cream: #d2cf9a;
+    --text-white: #ffffff;
+    --font-display: 'Righteous', sans-serif;
+    --font-body: 'Space Grotesk', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    line-height: 1.8;
+    background-color: var(--bg-main);
+    color: var(--text-cream);
+    padding: 32px 16px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+h1 {
+    font-family: var(--font-display);
+    font-size: 48px;
+    line-height: 1.1em;
+    font-weight: normal;
+    text-align: center;
+    color: var(--text-cream);
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 16px;
+    color: var(--accent-gold);
+    margin-bottom: 16px;
+}
+
+h2 {
+    font-family: var(--font-display);
+    font-size: 24px;
+    font-weight: normal;
+    color: var(--accent-gold);
+    border-bottom: 1px solid var(--accent-gold);
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+}
+
+.button-section {
+    padding: 32px;
+    background-color: var(--bg-card);
+    border: 2px solid var(--accent-gold);
+}
+
+.button-section p {
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+button {
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0;
+}
+
+.button-01 {
+    background-color: #0066CC;
+    color: var(--text-white);
+    padding: 16px 32px;
+    border: 2px solid #0066CC;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.button-01:hover {
+    background-color: var(--text-white);
+    color: #0066CC;
+    border-color: #0066CC;
+}
+
+.button-02 {
+    background-color: #0e6027;
+    color: var(--text-white);
+    padding: 16px 32px;
+    border: 2px solid #0e6027;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button-02:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.button-03 {
+    background-color: var(--accent-gold);
+    color: var(--bg-main);
+    padding: 16px 32px;
+    border: 2px solid var(--accent-gold);
+    transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out, background-color 0.25s ease-in-out;
+}
+
+.button-03:hover {
+    transform: scale(1.07);
+    background-color: var(--accent-gold-bright);
+    box-shadow: 0 0 18px rgba(154, 126, 59, 0.75);
+}
+
+.button-04 {
+    background-color: transparent;
+    color: var(--text-cream);
+    padding: 16px 32px;
+    border: 2px solid var(--text-cream);
+    border-radius: 0px;
+    transition: border-radius 0.4s ease, background-color 0.4s ease, color 0.4s ease;
+}
+
+.button-04:hover {
+    border-radius: 32px;
+    background-color: var(--text-cream);
+    color: var(--bg-main);
+}
+
+.button-05 {
+    background-color: var(--bg-main);
+    color: var(--accent-gold);
+    padding: 16px 32px;
+    border: 2px solid var(--accent-gold);
+    letter-spacing: 0px;
+    transition: letter-spacing 0.35s ease, background-color 0.35s ease, color 0.35s ease;
+}
+
+.button-05:hover {
+    letter-spacing: 3px;
+    background-color: var(--accent-gold);
+    color: var(--bg-main);
+}
+
+.button-06 {
+    background-color: var(--text-cream);
+    color: var(--bg-main);
+    padding: 16px 32px;
+    border: 2px solid var(--accent-gold);
+    box-shadow: 0 6px 0 var(--accent-gold);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.button-06:hover {
+    transform: translateY(4px);
+    box-shadow: 0 2px 0 var(--accent-gold);
+    background-color: var(--accent-gold-bright);
+}
+
+footer {
+    text-align: center;
+    margin-top: 16px;
+    padding-top: 20px;
+    border-top: 2px solid var(--accent-gold);
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+footer a {
+    color: var(--accent-gold);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
