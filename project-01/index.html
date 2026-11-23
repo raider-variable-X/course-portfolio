@@ -1,13 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Example Project 00</title>
-    </head>
-    <body>
-        <h1>Example Project 00</h1>
-        <p>This is an example project.</p>
-        <a href="../index.html">Back to Homepage</a>
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xavier Smith | Data Engineering, Web Dev &amp; Music Production</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="brand">
+                <h1>Xavier Smith</h1>
+                <p class="tagline">Computing Applications &bull; Data Pipelines &bull; 90s R&amp;B Production</p>
+            </div>
+            <nav aria-label="Primary Navigation">
+                <ul class="nav-list">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="rc20-stripes" aria-hidden="true">
+            <span class="stripe stripe-1"></span>
+            <span class="stripe stripe-2"></span>
+            <span class="stripe stripe-3"></span>
+            <span class="stripe stripe-4"></span>
+            <span class="stripe stripe-5"></span>
+            <span class="stripe stripe-6"></span>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="panel">
+            <h2>About Me</h2>
+            <p>
+                My name is Xavier, a student finishing my Bachelor of Science in Computing Applications at Texas Tech University. My focus is building practical data pipelines, responsive, accessible web applications, and automated reporting tools that turn raw data into clear decisions. 
+            </p>
+            <p>
+                Outside of the classroom and VS Code, I spend my time producing 90s R&amp;B and classic hip-hop beats in FL Studio, working with analog-style synth plugins, and dialing in hardware setups. That mix of technical problem-solving and retro audio aesthetics shapes how I design and build on the web.
+            </p>
+        </section>
+
+        <section id="skills" class="panel">
+            <h2>Skills &amp; Interests</h2>
+            <div class="skills-grid">
+                <article class="skill-card">
+                    <span class="module-tag tag-orange">01 // DATA</span>
+                    <h3>Data Engineering &amp; SQL</h3>
+                    <p>Building ETL workflows, relational schemas, and cloud-ready data solutions using mySQL, noSQL, Python, and Power BI.</p>
+                </article>
+
+                <article class="skill-card">
+                    <span class="module-tag tag-amber">02 // WEB</span>
+                    <h3>Front-End Development</h3>
+                    <p>Handcrafting semantic HTML5, responsive CSS Flexbox layouts, custom properties, and clean GitHub Pages deployments.</p>
+                </article>
+
+                <article class="skill-card">
+                    <span class="module-tag tag-sage">03 // DESIGN</span>
+                    <h3>UI Prototyping &amp; Graphics</h3>
+                    <p>Designing wireframes in Figma and creating custom retro logos and visual assets in Affinity Photo 2 and GIMP.</p>
+                </article>
+
+                <article class="skill-card">
+                    <span class="module-tag tag-blue">04 // AUDIO</span>
+                    <h3>Music Production</h3>
+                    <p>Composing 90s R&amp;B and classic hip hop tracks in FL Studio with classic FM synth emulations, samplers, and tape saturation.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="projects" class="panel">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="retro-frame">
+                        <img src="./project-yourdadjokes.png" alt="YourDadJokes Retro Web App Preview">
+                    </div>
+                    <div class="project-body">
+                        <h3>YourDadJokes Web App</h3>
+                        <p>A retro-styled single-page web application built with semantic HTML, custom CSS styling, and interactive JavaScript, deployed live on GitHub Pages.</p>
+                        <a href="https://github.com/raider-variable-X" target="_blank" class="btn-retro">View Repository</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="retro-frame">
+                        <img src="./project-subtrakt.png" alt="SubTrakt Subscription Manager Prototype">
+                    </div>
+                    <div class="project-body">
+                        <h3>SubTrakt UI Prototype</h3>
+                        <p>An interactive user experience prototype designed in Figma to track recurring software and plugin subscriptions with clear visual hierarchy.</p>
+                        <a href="https://github.com/raider-variable-X" target="_blank" class="btn-retro">Explore Case Study</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="retro-frame">
+                        <img src="./project-synth-archive.png" alt="Vintage Synth Hardware Showcase">
+                    </div>
+                    <div class="project-body">
+                        <h3>90s Synth Hardware Index</h3>
+                        <p>A responsive Flexbox showcase cataloging classic synthesizers and drum samplers that shaped 80s and 90s R&amp;B production.</p>
+                        <a href="../week-04-exercise-02/index.html" class="btn-retro">Launch Demo</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="footer-inner">
+            <p>Open to Data Engineering &amp; Web Collaboration</p>
+            <p>Contact: <a href="mailto:xavsmith@ttu.edu">xavsmith@ttu.edu</a> &bull; <a href="https://github.com/raider-variable-X" target="_blank">GitHub</a></p>
+        </div>
+    </footer>
+</body>
+
 </html>
