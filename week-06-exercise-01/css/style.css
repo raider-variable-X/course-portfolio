@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Roboto:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #f4f6f9;
+  background-color: #090c14;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 32px 0;
+}
+
+main {
+  max-width: 800px;
+  width: 100%;
+  padding: 32px;
+  background-color: #111624;
+  border: 1px solid #2b3752;
+}
+
+h1 {
+  font-family: 'Michroma', sans-serif;
+  font-size: 2.25rem;
+  font-weight: normal;
+  line-height: 1.2;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 2px solid #e05a2b;
+}
+
+h2 {
+  font-family: 'Michroma', sans-serif;
+  font-size: 1.2rem;
+  font-weight: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #f0b429;
+  margin-top: 32px;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #2b3752;
+}
+
+p {
+  margin-bottom: 16px;
+  color: #d0d7e3;
+}
+
+ul {
+  margin-left: 32px;
+  margin-bottom: 16px;
+}
+
+li {
+  margin-bottom: 8px;
+  color: #d0d7e3;
+}
+
+a {
+  color: #f0b429;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #9ec5e5;
+}
+
+code {
+  font-family: monospace;
+  background-color: #182033;
+  color: #9ec5e5;
+  padding: 2px 6px;
+  border: 1px solid #2b3752;
+}
+
+/* Style 1: Vertical Fixed Sidebar */
+.nav-simple {
+  position: fixed;
+  left: 32px;
+  top: 32px;
+  width: 200px;
+}
+
+.nav-simple ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-simple li {
+  margin-bottom: 8px;
+}
+
+.nav-simple a {
+  display: block;
+  padding: 10px 16px;
+  font-family: 'Michroma', sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #f4f6f9;
+  text-decoration: none;
+  background-color: #182033;
+  border: 1px solid #2b3752;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.nav-simple a:hover {
+  background-color: #f0b429;
+  color: #090c14;
+  border-color: #f0b429;
+}
+
+.nav-simple+main {
+  margin-left: 248px;
+}
+
+/* Style 2: Horizontal Top Bar */
+.nav-horizontal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #111624;
+  border-bottom: 2px solid #e05a2b;
+  padding: 0 32px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.nav-horizontal ul {
+  list-style: none;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0;
+  display: flex;
+  gap: 32px;
+}
+
+.nav-horizontal li {
+  margin-bottom: 0;
+}
+
+.nav-horizontal a {
+  display: block;
+  padding: 16px 0;
+  font-family: 'Michroma', sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #f4f6f9;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-horizontal a:hover {
+  color: #f0b429;
+}
+
+.nav-horizontal+main {
+  margin-top: 72px;
+}
+
+/* Style 3: Custom Centered Button Bar */
+.nav-custom {
+  position: fixed;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #182033;
+  border: 1px solid #f0b429;
+  padding: 8px 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+}
+
+.nav-custom ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.nav-custom li {
+  margin-bottom: 0;
+}
+
+.nav-custom a {
+  display: block;
+  padding: 8px 14px;
+  font-family: 'Michroma', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #f4f6f9;
+  background-color: #111624;
+  border: 1px solid #2b3752;
+  text-decoration: none;
+  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+
+.nav-custom a:hover {
+  background-color: #e05a2b;
+  color: #f4f6f9;
+  border-color: #e05a2b;
+}
+
+.nav-custom+main {
+  margin-top: 84px;
+}
+
+@media (max-width: 768px) {
+  .nav-simple {
+    position: static;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0 16px;
+  }
+
+  .nav-simple+main {
+    margin-left: 0;
+  }
+
+  body {
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  .nav-horizontal ul,
+  .nav-custom ul {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+}
